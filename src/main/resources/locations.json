@@ -1,18 +1,30 @@
-{
-  "Locatii": [
+ [
     {
-      "ID": 819827,
+      "ID": "819827",
       "nm": "Razvilka",
       "lat": "55.591667",
       "lon": "37.740833",
       "countryCode": "RU"
     },
     {
-      "ID": 524901,
+      "ID": "524901",
       "nm": "Moscow",
       "lat": "55.752220",
       "lon": "37.615555",
       "countryCode": "RU"
+    },
+    {
+      "ID": "2973393",
+      "nm": "Tarascon",
+      "lat": "43.805828",
+      "lon": "4.660280",
+      "countryCode": "FR"
+    },
+    {
+      "ID": "2986678",
+      "nm": "Ploufragan",
+      "lat": "48.491409",
+      "lon": "-2.794580",
+      "countryCode": "FR"
     }
   ]
-}

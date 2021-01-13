@@ -4,10 +4,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.IOException;
-import java.net.URL;
+import ro.mta.se.lab.controller.MeteoController;
 
-public class Main extends Application{
+import java.io.IOException;
+
+public class Main extends Application {
 
     public static void main(String[] args)
     {
@@ -20,6 +21,7 @@ public class Main extends Application{
 
         try {
             loader.setLocation(this.getClass().getResource("/view/MeteoView.fxml"));
+            loader.setController(new MeteoController());
             primaryStage.setScene(new Scene(loader.load()));
             primaryStage.show();
         } catch (IOException e) {

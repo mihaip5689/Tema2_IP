@@ -3,14 +3,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+    >
    <children>
       <SplitPane dividerPositions="0.27386934673366836" layoutX="201.0" layoutY="68.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <ChoiceBox layoutX="39.0" layoutY="41.0" prefWidth="150.0" />
-                  <ChoiceBox layoutX="330.0" layoutY="41.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="tari" onAction="#LoadCities" layoutX="39.0" layoutY="41.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="orase" layoutX="330.0" layoutY="41.0" prefWidth="150.0"/>
                   <Label layoutX="39.0" layoutY="14.0" text="Tara" />
                   <Label layoutX="330.0" layoutY="14.0" text="Oras" />
                </children>
