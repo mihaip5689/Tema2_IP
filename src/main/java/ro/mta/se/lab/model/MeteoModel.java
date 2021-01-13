@@ -19,9 +19,9 @@ public class MeteoModel {
     private String wind;
     private String humidity;
 
-    public MeteoModel(String city) {
+    public MeteoModel(String city, String country) {
         String API_key = "d41a3b43ac8cf4ceaa48bf6d6c1f78f4";
-        String API_url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid="+API_key;
+        String API_url = "http://api.openweathermap.org/data/2.5/weather?q="+city+","+country+"&units=metric&appid="+API_key;
 
         try{
             URL url = new URL(API_url);

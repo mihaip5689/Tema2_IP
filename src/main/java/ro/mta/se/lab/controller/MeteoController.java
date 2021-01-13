@@ -104,7 +104,7 @@ public class MeteoController {
 
     @FXML
     public void LoadWeatherData(ActionEvent e){
-        meteoModel = new MeteoModel(orase.getValue().toString());
+        meteoModel = new MeteoModel(orase.getValue().toString(), tari.getValue().toString());
 
         this.temperature.setText(meteoModel.getTemperature()+"\u00B0C");
         this.wind.setText(meteoModel.getWind()+"km/h");

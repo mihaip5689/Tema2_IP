@@ -1,30 +1,142 @@
  [
-    {
-      "ID": "819827",
-      "nm": "Razvilka",
-      "lat": "55.591667",
-      "lon": "37.740833",
-      "countryCode": "RU"
-    },
-    {
-      "ID": "524901",
-      "nm": "Moscow",
-      "lat": "55.752220",
-      "lon": "37.615555",
-      "countryCode": "RU"
-    },
-    {
-      "ID": "2973393",
-      "nm": "Tarascon",
-      "lat": "43.805828",
-      "lon": "4.660280",
-      "countryCode": "FR"
-    },
-    {
-      "ID": "2986678",
-      "nm": "Ploufragan",
-      "lat": "48.491409",
-      "lon": "-2.794580",
-      "countryCode": "FR"
-    }
-  ]
+   {
+     "ID": "819827",
+     "nm": "Razvilka",
+     "lat": "55.591667",
+     "lon": "37.740833",
+     "countryCode": "RU"
+   },
+   {
+     "ID": "524901",
+     "nm": "Moscow",
+     "lat": "55.752220",
+     "lon": "37.615555",
+     "countryCode": "RU"
+   },
+   {
+     "ID": "2973393",
+     "nm": "Tarascon",
+     "lat": "43.805828",
+     "lon": "4.660280",
+     "countryCode": "FR"
+   },
+   {
+     "ID": "2986678",
+     "nm": "Ploufragan",
+     "lat": "48.491409",
+     "lon": "-2.794580",
+     "countryCode": "FR"
+   },
+   {
+     "ID": "2643743",
+     "nm": "London",
+     "lat": "51.508",
+     "lon": "-0.126",
+     "countryCode": "GB"
+   },
+   {
+     "ID": "2644210",
+     "nm": "Liverpool",
+     "lat": "53.411",
+     "lon": "-2.978",
+     "countryCode": "GB"
+   },
+   {
+     "ID": "683506",
+     "nm": "Bucharest",
+     "lat": "44.432",
+     "lon": "26.106",
+     "countryCode": "RO"
+   },
+   {
+     "ID": "666767",
+     "nm": "Slatina",
+     "lat": "44.433",
+     "lon": "24.367",
+     "countryCode": "RO"
+   },
+   {
+     "ID": "2950159",
+     "nm": "Berlin",
+     "lat": "52.524",
+     "lon": "13.411",
+     "countryCode": "DE"
+   },
+   {
+     "ID": "2867714",
+     "nm": "Munich",
+     "lat": "48.137",
+     "lon": "11.575",
+     "countryCode": "DE"
+   },
+   {
+     "ID": "3173435",
+     "nm": "Milan",
+     "lat": "45.464",
+     "lon": "9.190",
+     "countryCode": "IT"
+   },
+   {
+     "ID": "3169070",
+     "nm": "Rome",
+     "lat": "41.895",
+     "lon": "12.484",
+     "countryCode": "IT"
+   },
+   {
+     "ID": "1816670",
+     "nm": "Beijing",
+     "lat": "39.907",
+     "lon": "116.397",
+     "countryCode": "CN"
+   },
+   {
+     "ID": "1796236",
+     "nm": "Shanghai",
+     "lat": "31.222",
+     "lon": "121.458",
+     "countryCode": "CN"
+   },
+   {
+     "ID": "6167865",
+     "nm": "Toronto",
+     "lat": "43.700",
+     "lon": "-79.416",
+     "countryCode": "CA"
+   },
+   {
+     "ID": "6094817",
+     "nm": "Ottawa",
+     "lat": "45.411",
+     "lon": "-75.698",
+     "countryCode": "CA"
+   },
+   {
+     "ID": "1850147",
+     "nm": "Tokyo",
+     "lat": "35.690",
+     "lon": "139.692",
+     "countryCode": "JP"
+   },
+   {
+     "ID": "1853909",
+     "nm": "Osaka",
+     "lat": "34.694",
+     "lon": "135.502",
+     "countryCode": "JP"
+   },
+   {
+     "ID": "2553604",
+     "nm": "Casablanca",
+     "lat": "33.593",
+     "lon": "-7.619",
+     "countryCode": "MA"
+   },
+   {
+     "ID": "2530335",
+     "nm": "Tangier",
+     "lat": "35.781",
+     "lon": "-5.814",
+     "countryCode": "MA"
+   }
+ ]
