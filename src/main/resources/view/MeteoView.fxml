@@ -9,10 +9,11 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <ChoiceBox fx:id="tari" onAction="#LoadCities" layoutX="39.0" layoutY="41.0" prefWidth="150.0" />
-                  <ChoiceBox fx:id="orase" layoutX="330.0" layoutY="41.0" prefWidth="150.0"/>
+                  <ChoiceBox fx:id="tari" layoutX="39.0" layoutY="41.0" onAction="#LoadCities" prefWidth="150.0" />
+                  <ChoiceBox fx:id="orase" layoutX="268.0" layoutY="41.0" prefWidth="150.0" />
                   <Label layoutX="39.0" layoutY="14.0" text="Tara" />
-                  <Label layoutX="330.0" layoutY="14.0" text="Oras" />
+                  <Label layoutX="268.0" layoutY="14.0" text="Oras" />
+                  <Button fx:id="cauta" layoutX="473.0" layoutY="41.0" mnemonicParsing="false" onAction="#LoadWeatherData" text="Cauta" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
@@ -20,12 +21,9 @@
                   <Label layoutX="47.0" layoutY="40.0" text="Temperatura" />
                   <Label layoutX="47.0" layoutY="97.0" text="Vant" />
                   <Label layoutX="47.0" layoutY="159.0" text="Precipitatii" />
-                  <TextField layoutX="191.0" layoutY="36.0" />
-                  <TextField layoutX="191.0" layoutY="93.0" />
-                  <TextField layoutX="191.0" layoutY="155.0" />
-                  <Label layoutX="389.0" layoutY="40.0" text="temp" />
-                  <Label layoutX="389.0" layoutY="97.0" text="vant" />
-                  <Label layoutX="389.0" layoutY="159.0" text="precip" />
+                  <Label fx:id="temperature" layoutX="205.0" layoutY="40.0" text="temp" />
+                  <Label fx:id="wind" layoutX="208.0" layoutY="97.0" text="vant" />
+                  <Label fx:id="humidity" layoutX="202.0" layoutY="159.0" text="precip" />
                </children>
             </AnchorPane>
         </items>
