@@ -40,7 +40,7 @@ public class MeteoModel {
 
             JSONParser parser = new JSONParser();
 
-            Map respMap = (Map) parser.parse(content.toString()); //jsonToMap (content.toString());
+            Map respMap = (Map) parser.parse(content.toString());
             Map mainMap = (Map) parser.parse(respMap.get("main").toString());
             Map windMap = (Map) parser.parse(respMap.get("wind").toString());
 

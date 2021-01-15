@@ -1,6 +1,5 @@
 package ro.mta.se.lab.model;
 
-import junit.framework.TestCase;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.junit.Before;
@@ -17,7 +16,9 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
-public class MeteoModelTest {
+import static org.mockito.Mockito.*;
+
+public class MeteoModelTestMockito {
 
     private MeteoModel meteoModel;
 
@@ -25,14 +26,27 @@ public class MeteoModelTest {
     private String wind;
     private String humidity;
 
+    /**
+     * Valori mockito test:
+     *      - temperature: 55
+     *      - wind: 66
+     *      - humidity: 77
+     */
+
     @Before
     public void setUp() throws Exception {
-        meteoModel = new MeteoModel("London","GB");
 
         String API_key = "d41a3b43ac8cf4ceaa48bf6d6c1f78f4";
         String API_url = "http://api.openweathermap.org/data/2.5/weather?q="+"London"+","+"GB"+"&units=metric&appid="+API_key;
 
         try{
+
+            Map m = mock(Map.class);
+
+            when(m.get("temp")).thenReturn("55");
+            when(m.get("speed")).thenReturn("66");
+            when(m.get("humidity")).thenReturn("77");
+
             URL url = new URL(API_url);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
@@ -49,13 +63,18 @@ public class MeteoModelTest {
 
             JSONParser parser = new JSONParser();
 
-            Map respMap = (Map) parser.parse(content.toString());
-            Map mainMap = (Map) parser.parse(respMap.get("main").toString());
-            Map windMap = (Map) parser.parse(respMap.get("wind").toString());
+            //Map respMap = (Map) parser.parse(content.toString());
+            //Map mainMap = (Map) parser.parse(respMap.get("main").toString());
+            //Map windMap = (Map) parser.parse(respMap.get("wind").toString());
 
-            this.temperature = mainMap.get("temp").toString();
-            this.humidity = mainMap.get("humidity").toString();
-            this.wind = windMap.get("speed").toString();
+            //this.temperature = mainMap.get("temp").toString();
+            //this.humidity = mainMap.get("humidity").toString();
+            //this.wind = windMap.get("speed").toString();
+
+            this.temperature = (String) m.get("temp");
+            this.humidity = (String) m.get("humidity");
+            this.wind = (String) m.get("speed");
+
 
 
         } catch (MalformedURLException e) {
@@ -64,23 +83,24 @@ public class MeteoModelTest {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
         }
+        //catch (ParseException e) {
+          //  e.printStackTrace();
+        //}
     }
 
     @Test
     public void getTemperature() {
-        assertEquals(meteoModel.getTemperature(), this.temperature);
+        assertEquals(this.temperature,"55");
     }
 
     @Test
     public void getWind() {
-        assertEquals(meteoModel.getWind(), this.wind);
+        assertEquals(this.wind,"66");
     }
 
     @Test
     public void getHumidity() {
-        assertEquals(meteoModel.getHumidity(), this.humidity);
+        assertEquals(this.humidity,"77");
     }
 }
