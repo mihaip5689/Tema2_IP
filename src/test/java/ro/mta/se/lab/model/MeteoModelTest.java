@@ -3,6 +3,8 @@ package ro.mta.se.lab.model;
 import junit.framework.TestCase;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +15,9 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.util.Map;
 
-public class MeteoModelTest extends TestCase {
+import static org.junit.Assert.*;
+
+public class MeteoModelTest {
 
     private MeteoModel meteoModel;
 
@@ -21,8 +25,8 @@ public class MeteoModelTest extends TestCase {
     private String wind;
     private String humidity;
 
+    @Before
     public void setUp() throws Exception {
-        //super.setUp();
         meteoModel = new MeteoModel("London","GB");
 
         String API_key = "d41a3b43ac8cf4ceaa48bf6d6c1f78f4";
@@ -65,15 +69,18 @@ public class MeteoModelTest extends TestCase {
         }
     }
 
-    public void testGetTemperature() {
+    @Test
+    public void getTemperature() {
         assertEquals(meteoModel.getTemperature(), this.temperature);
     }
 
-    public void testGetWind() {
+    @Test
+    public void getWind() {
         assertEquals(meteoModel.getWind(), this.wind);
     }
 
-    public void testGetHumidity() {
+    @Test
+    public void getHumidity() {
         assertEquals(meteoModel.getHumidity(), this.humidity);
     }
 }
