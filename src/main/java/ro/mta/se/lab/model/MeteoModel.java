@@ -20,6 +20,7 @@ public class MeteoModel {
     private String humidity;
 
     public MeteoModel(String city, String country) {
+
         String API_key = "d41a3b43ac8cf4ceaa48bf6d6c1f78f4";
         String API_url = "http://api.openweathermap.org/data/2.5/weather?q="+city+","+country+"&units=metric&appid="+API_key;
 

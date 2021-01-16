@@ -76,7 +76,6 @@ public class MeteoModelTestMockito {
             this.wind = (String) m.get("speed");
 
 
-
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (ProtocolException e) {
@@ -84,9 +83,6 @@ public class MeteoModelTestMockito {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //catch (ParseException e) {
-          //  e.printStackTrace();
-        //}
     }
 
     @Test
